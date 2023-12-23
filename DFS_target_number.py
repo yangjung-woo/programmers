@@ -15,7 +15,7 @@ def dfs( current,target,level ,max_len , numbers) :
         
     else:
         operand = numbers[level]
-        dfs(current+operand ,target , level+1 , max_len,numbers )
+        dfs(current+operand ,target , level+1 , max_len, numbers )
         dfs(current-operand ,target , level+1 , max_len , numbers )
 
 
